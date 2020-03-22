@@ -27,9 +27,14 @@ export class NavbarComponent implements OnInit {
         { page: '/media', title: 'Media' }
       ]
     }, {
-      page: '/join',
-      title: 'Join Us',
+      page: '/coverage',
+      title: 'Request Coverage',
       isDropdown: false
+    }, {
+      externalLink: 'https://securelb.imodules.com/s/1225/mobile/mobile.aspx?sid=1225&gid=1&pgid=6795&dids=.101&bledit=1&sort=1',
+      title: 'Ambulance Logo',
+      isDropdown: false,
+      customClass: 'logo'
     }, {
       page: null,
       title: 'Outreach',
@@ -40,29 +45,25 @@ export class NavbarComponent implements OnInit {
         { page: '/community', title: 'Community Outreach' }
       ]
     }, {
-      page: '/coverage',
-      title: 'Request Coverage',
-      isDropdown: false
-    }, {
-      page: '/login',
-      title: 'Members',
-      isDropdown: false
-    }, {
       page: '/contact',
       title: 'Contact Us',
       isDropdown: false
     }, {
+      page: '/login',
+      title: 'Login',
+      isDropdown: false
+    }, /**{
       externalLink: 'https://securelb.imodules.com/s/1225/mobile/mobile.aspx?sid=1225&gid=1&pgid=6795&dids=.101&bledit=1&sort=1',
       title: 'Donate',
       isDropdown: false,
       customClass: 'donate'
-    }
+    }*/
   ];
 
   constructor(private router: Router) { }
 
   ngOnInit() { }
-  
+
   isActive(nav): boolean {
     if (nav.isDropdown) {
       for (const elem of nav.dropdownOptions) {
@@ -72,7 +73,7 @@ export class NavbarComponent implements OnInit {
       }
       return false;
     }
-    
+
     return this.router.url && this.router.url == nav.page;
   }
 }

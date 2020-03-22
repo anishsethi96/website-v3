@@ -128,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "website-v3"
+  "defaultProject": "website-v3",
+  "cli": {
+    "analytics": false
+  }
 }

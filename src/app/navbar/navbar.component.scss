@@ -1,14 +1,15 @@
 .bg-rpia-navbar {
-  background: #151515;
+  background: rgba(0, 0, 0, 0.7);
+
 
   @media(min-width: 992px) { // lg and above
     padding-top: 0;
     padding-bottom: 0;
   }
-  
+
   .navbar-nav {
     font-size: 14px;
-    
+
     .nav-item {
       @media(min-width: 1024px) {
         padding-top: 28px;
@@ -18,7 +19,7 @@
       +.nav-item {
         margin-left: 5px;
       }
-      
+
       .nav-link {
         padding: 5px 17px;
         margin: 0;
@@ -26,20 +27,26 @@
         color: #fff;
         line-height: 24px;
         display: inline-block;
-        
+
         &.donate {
           background: linear-gradient(to bottom, #efcc5a 0%, #846916 100%);
           background-size: 1px 50px;
           color: black;
           transition: background 300ms;
         }
+
+        &.logo {
+          background-image: url('../../assets/patch.svg');
+          background-size: 120px 150px;
+          background-repeat: no-repeat;
+        }
       }
-      
+
       &.active, &:hover, &:focus {
         .nav-link {
           background-color: #c52d2f;
           color: #fff;
-          
+
           &.donate {
             background-position: 100px;
             color: black;
@@ -48,7 +55,7 @@
       }
     }
   }
-  
+
   .dropdown {
     .dropdown-menu {
       background-color: rgba(0, 0, 0, .85);
@@ -61,7 +68,7 @@
       border-top: 0;
       border-radius: 0;
       left: 0;
-      
+
       .dropdown-item {
         display: block;
         padding: 3px 20px;
@@ -72,13 +79,13 @@
         white-space: nowrap;
         padding: 8px 15px;
         color: #fff;
-        
+
         &.active, &:hover, &:focus {
           background-color: #c52d2f;
           color: #fff;
         }
       }
-      
+
       .dropdown-divider {
         height: 1px;
         overflow: hidden;
@@ -86,7 +93,7 @@
         border-top: 1px solid rgba(150, 150, 150, .25);
       }
     }
-    
+
     &:hover {
       .dropdown-menu {
         display: block;
