@@ -1,15 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@600;700&display=swap');
+
+h1 { color: white; font-family: 'Sarabun', sans-serif; font-size: 54px; font-weight: 700; letter-spacing: -1px; line-height: 1;}
+h2 { color: white; font-family: 'Sarabun', sans-serif; font-size: 30px; font-weight: 600; line-height: 32px; margin: 0 0 35px;}
+p { color: white; font-family: 'Roboto Slab', sans-serif; font-size: 14px; line-height: 20px; margin: 0 0 24px; text-justify: inter-word }
+
 .partners {
   background-image: url('../../../assets/partners_bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
+
   .translucent-bg {
     background: rgba(255,255,255,.5);
-    padding: 20px 0;
+    padding: 20px 0px;
   }
-  
+
   .partner-img {
     max-height: 150px;
+  }
+}
+
+.rpia-home {
+  background-image: url('../../../assets/bg1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px 0px 400px;
+
+  .transbox {
+    margin-right: 500px;
+    margin-left: 500px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 0.1px solid black;
+    border-radius: 5px;
+}
+
+  .text{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+  }
+}
+
+.home-team {
+  background-image: url('../../../assets/grey_bg.jpg');
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  color: rgba(255, 255, 255);
+
+  .bg-rpia-home{
+    padding: -5px 0px;
+  }
+}
+
+.rpia-home-2 {
+  padding: 40px 00px 40px;
+  background: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255);
+
+  .carousel {
+    padding: 30px 170px 20px;
+  }
+
+  .bg-rpia-donate{
+    background-image: url('../../../assets/sunset.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 50px 100px;
+  }
+
+  .button {
+    background-color: #8c8c8c;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button1 {
+    background: rgba(0, 0, 0, 0.3);;
+    color: white;
+    border: 2px solid #ffffff;
+  }
+
+  .button1:hover {
+    background-color: #8c8c8c;
+  }
+}
+
+.overlay{
+  body {
+    background-color: #252830;
+    color: white;
+    font-family: "Lato";
+  }
+  .container-fluid {
+    position: relative;
+    left: 50%;
+    top: 120px;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+    width: 85%;
+  }
+  .media {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  figure {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+  figure a {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+  }
+  figure:hover .media {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  figcaption {
+    color: #252830;
+    height: calc(100% - 30px);
+    margin: 15px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 150px;
+  }
+  .body {
+    background-color: white;
+    bottom: 0;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+  }
+  svg {
+    height: inherit;
+    width: 100%;
+  }
+  svg text {
+    text-anchor: middle;
+  }
+  svg #alpha {
+    fill: white;
+  }
+  svg .title {
+    font-size: 34px;
+    font-family: "Montserrat";
+    letter-spacing: 5px;
+  }
+  svg #base {
+    fill: white;
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
   }
 }

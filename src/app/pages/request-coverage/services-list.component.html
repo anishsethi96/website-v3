@@ -1,0 +1,39 @@
+<p style="text-align:center">Planning an event at or around RPI?
+<br>Here are a few options of how RPI Ambulance can provide EMS coverage for your event.
+<br>If you have further questions, please feel free to contact us.</p>
+<br>
+<div *ngFor="let service of services; index as serviceId">
+  <div class="blog-card">
+    <div class="meta">
+      <!-- Background image -->
+      <div class="photo" style="background-image: url(https://www.bluegeo.net/img/portfolio/graphic_amb.jpg)"></div>
+      <!-- Words above image -->
+      <!-- <ul class="details">
+        <li class="author"><a href="#">John Doe</a></li>
+        <li class="date">Aug. 24, 2015</li>
+        <li class="tags">
+          <ul>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Code</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+          </ul>
+        </li>
+      </ul> -->
+    </div>
+    <!-- Description module -->
+    <div class="description">
+      <h1>{{ service.name }}</h1>
+      <h2>{{ service.price | currency }}/hour*</h2>
+      <p> Activity Description: {{ service.description }} </p>
+      <p>Service: {{ service.service }}</p>
+      <p>EMT: {{ service.emt }} on field crews</p>
+      <p>First Response: {{ service.first_response }}</p>
+      <p>Supplies: {{ service.supplies }}</p>
+      <br>
+      <button (click)='select()'>Select</button>
+    </div>
+  </div>
+</div>
+
+<p style="text-align:center">* Most events within the RPI Community will be staffed free of charge.</p>

@@ -20,8 +20,7 @@ export class CarouselComponent implements OnInit {
       title: '5939',
       desc: `RPI Ambulance operates a 2006 AEV Trauma Hawk XL Type II ambulance mounted on a Ford E-350 chassis. This
         vehicle was placed in service in the Spring of 2007. The county vehicle identifier is 5939, however the
-        ambulance was formerly known as A-39 and continues to hold this call sign within the agency. 5939 is the fifth
-        ambulance operated by RPI Ambulance. The first was placed in service in 1983.`,
+        ambulance was formerly known as A-39 a.`,
       readMoreLink: '/5939-about'
     },
     {
@@ -38,7 +37,7 @@ export class CarouselComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   getBgImageStyle(slide): {'background-image': string} {
     return { 'background-image': `url(${slide.image})` };
   }

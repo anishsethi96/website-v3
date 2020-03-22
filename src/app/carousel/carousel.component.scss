@@ -3,20 +3,21 @@
 }
 
 .rpia-carousel-item-inner {
-  height: 730px;
+  height: 500px;
+  width: 600px;
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   .gray-background {
     background-color: rgba(0, 0, 0, .6);
-    padding: 15px;
+    padding: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
     margin-bottom: 25px;
   }
-  
+
   .btn-primary {
     color: #fff;
     background-color: #c52d2f;
@@ -26,12 +27,12 @@
   h1 {
     font-size: 36px;
   }
-  
+
   h2 {
     font-size: 20px;
     font-weight: 400;
   }
-  
+
   .animation {
     -webkit-animation: fadeInUp 300ms linear;
     -moz-animation: fadeInUp 300ms linear;
@@ -43,7 +44,7 @@
     -o-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
     animation-fill-mode: both;
-    
+
     &.animated-item-1 {
       -webkit-animation-delay: 300ms;
       -moz-animation-delay: 300ms;
@@ -51,7 +52,7 @@
       -ms-animation-delay: 300ms;
       animation-delay: 300ms;
     }
-    
+
     &.animated-item-2 {
       -webkit-animation-delay: 600ms;
       -moz-animation-delay: 600ms;
@@ -59,7 +60,7 @@
       -ms-animation-delay: 600ms;
       animation-delay: 600ms;
     }
-    
+
     &.animated-item-3 {
       -webkit-animation-delay: 900ms;
       -moz-animation-delay: 900ms;
@@ -69,4 +70,3 @@
     }
   }
 }
-
