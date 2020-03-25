@@ -1,6 +1,7 @@
 .bg-rpia-navbar {
-  background: rgba(0, 0, 0, 0.7);
-
+  background-image: url('../../assets/bg1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @media(min-width: 992px) { // lg and above
     padding-top: 0;
@@ -8,16 +9,17 @@
   }
 
   .navbar-nav {
-    font-size: 14px;
+    font-size: 22px;
+    font-weight: 700;
 
     .nav-item {
       @media(min-width: 1024px) {
-        padding-top: 28px;
-        padding-bottom: 28px;
+        padding: 28px 5px 28px;
+        line-height: 120px;
       }
 
       +.nav-item {
-        margin-left: 5px;
+        margin-left: 20px;
       }
 
       .nav-link {
@@ -27,19 +29,6 @@
         color: #fff;
         line-height: 24px;
         display: inline-block;
-
-        &.donate {
-          background: linear-gradient(to bottom, #efcc5a 0%, #846916 100%);
-          background-size: 1px 50px;
-          color: black;
-          transition: background 300ms;
-        }
-
-        &.logo {
-          background-image: url('../../assets/patch.svg');
-          background-size: 120px 150px;
-          background-repeat: no-repeat;
-        }
       }
 
       &.active, &:hover, &:focus {

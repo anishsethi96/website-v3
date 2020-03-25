@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
     {
       page: '/',
       title: 'Home',
-      isDropdown: false
+      isDropdown: false,
     }, {
       page: null,
       title: 'About Us',
@@ -31,9 +31,7 @@ export class NavbarComponent implements OnInit {
       title: 'Request Coverage',
       isDropdown: false
     }, {
-      externalLink: 'https://securelb.imodules.com/s/1225/mobile/mobile.aspx?sid=1225&gid=1&pgid=6795&dids=.101&bledit=1&sort=1',
-      title: 'Ambulance Logo',
-      isDropdown: false,
+      isImage: true,
       customClass: 'logo'
     }, {
       page: null,
@@ -52,12 +50,7 @@ export class NavbarComponent implements OnInit {
       page: '/login',
       title: 'Login',
       isDropdown: false
-    }, /**{
-      externalLink: 'https://securelb.imodules.com/s/1225/mobile/mobile.aspx?sid=1225&gid=1&pgid=6795&dids=.101&bledit=1&sort=1',
-      title: 'Donate',
-      isDropdown: false,
-      customClass: 'donate'
-    }*/
+    }
   ];
 
   constructor(private router: Router) { }
