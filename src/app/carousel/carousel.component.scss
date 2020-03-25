@@ -4,21 +4,24 @@
 
 .rpia-carousel-item-inner {
   height: 500px;
-  width: 600px;
+  width: 650px;
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 
   .gray-background {
+    height: 350px;
+    width: 600px;
     background-color: rgba(0, 0, 0, .6);
-    padding: 5px;
+    padding: 50px 20px 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    margin-bottom: 25px;
+    margin-top: 25px;
   }
 
   .btn-primary {
+    margin-top: 25px;
     color: #fff;
     background-color: #c52d2f;
     border-color: #c52d2f;

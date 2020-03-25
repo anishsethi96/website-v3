@@ -4,26 +4,28 @@
   background-repeat: no-repeat;
 
   @media(min-width: 992px) { // lg and above
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 0px;
+    padding-right: 100px;
   }
 
   .navbar-nav {
     font-size: 22px;
     font-weight: 700;
+    text-align: center;
 
     .nav-item {
       @media(min-width: 1024px) {
-        padding: 28px 5px 28px;
+        padding: 10px 5px 0px;
         line-height: 120px;
       }
 
       +.nav-item {
-        margin-left: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
       }
 
       .nav-link {
-        padding: 5px 17px;
+        padding: 5px 10px;
         margin: 0;
         border-radius: 3px;
         color: #fff;
@@ -36,10 +38,6 @@
           background-color: #c52d2f;
           color: #fff;
 
-          &.donate {
-            background-position: 100px;
-            color: black;
-          }
         }
       }
     }
