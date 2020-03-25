@@ -23,6 +23,7 @@ import { MediaComponent } from './pages/media/media.component';
 import { JoinComponent } from './pages/join/join.component';
 import { NewMembersTrainingComponent } from './pages/new-members-training/new-members-training.component';
 import { CprCertificationComponent } from './pages/cpr-certification/cpr-certification.component';
+import { ServiceListComponent } from './pages/request-coverage/services-list.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { CprCertificationComponent } from './pages/cpr-certification/cpr-certifi
     MediaComponent,
     JoinComponent,
     NewMembersTrainingComponent,
-    CprCertificationComponent
+    CprCertificationComponent,
+    ServiceListComponent
   ],
   imports: [
     BrowserModule,

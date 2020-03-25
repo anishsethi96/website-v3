@@ -27,7 +27,7 @@ export class NavbarComponent implements OnInit {
         { page: '/media', title: 'Media' }
       ]
     }, {
-      page: '/coverage',
+      page: '/request-coverage',
       title: 'Request Coverage',
       isDropdown: false
     }, {
