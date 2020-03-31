@@ -73,6 +73,8 @@ p { color: white; font-family: 'Roboto Slab', sans-serif; font-size: 14px; line-
     padding: 80px 50px 100px;
   }
 
+
+
   .button {
     background-color: #8c8c8c;
     padding: 10px 20px;
@@ -171,5 +173,31 @@ p { color: white; font-family: 'Roboto Slab', sans-serif; font-size: 14px; line-
     fill: white;
     -webkit-mask: url(#mask);
     mask: url(#mask);
+  }
+}
+
+.“Instagram-content” {
+    background-image: url('../../../assets/grey_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  padding: 80px 50px 100px;
+  .top {
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100%;
+  }
+  .bottom {
+    position: absolute;
+    bottom: 0 ;
+    height: 100px;
+    width: 100%;
+  }
+  .content {
+    position: absolute;
+    top: 100px;
+    bottom: 100px;
+    width: 100%;
   }
 }
