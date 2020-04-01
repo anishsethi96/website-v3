@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@600;700&display=swap');
 
-h1 { color: white; font-family: 'Sarabun', sans-serif; font-size: 54px; font-weight: 700; letter-spacing: -1px; line-height: 1;}
-h2 { color: white; font-family: 'Sarabun', sans-serif; font-size: 30px; font-weight: 600; line-height: 32px; margin: 0 0 35px;}
+h1 { color: white; font-family: 'Sarabun', sans-serif; font-size: 64px; font-weight: 700; letter-spacing: -1px; line-height: 1;}
+h2 { color: white; font-family: 'Sarabun', sans-serif; font-size: 40px; font-weight: 600; line-height: 32px; margin: 0 0 35px;}
 p { color: white; font-family: 'Roboto Slab', sans-serif; font-size: 14px; line-height: 20px; margin: 0 0 24px; text-justify: inter-word }
 
 .partners {
@@ -22,25 +22,21 @@ p { color: white; font-family: 'Roboto Slab', sans-serif; font-size: 14px; line-
 }
 
 .rpia-home {
-  background-image: url('../../../assets/bg1.jpg');
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.6)
+  ),
+  url('../../../assets/bg1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 20px 0px 400px;
-
-  .transbox {
-    background: rgba(0, 0, 0, 0.6);
-    border: 0.1px solid black;
-    border-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 100px;
-}
+  padding: 50px 0px 500px;
 
   .text{
-    padding-top: 20px;
+    padding-left: 20px;
     text-align: center;
     color: white;
-    font-size: 32px;
+    font-size: 18px;
   }
 }
 
@@ -166,7 +162,7 @@ p { color: white; font-family: 'Roboto Slab', sans-serif; font-size: 14px; line-
   }
   svg .title {
     font-size: 34px;
-    font-family: "Montserrat";
+    font-family: 'Sarabun', sans-serif;
     letter-spacing: 5px;
   }
   svg #base {
@@ -176,12 +172,12 @@ p { color: white; font-family: 'Roboto Slab', sans-serif; font-size: 14px; line-
   }
 }
 
-.“Instagram-content” {
+.instagram-content {
     background-image: url('../../../assets/grey_bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-  padding: 80px 50px 100px;
+    padding: 80px 50px 100px;
   .top {
     position: absolute;
     top: 0;
