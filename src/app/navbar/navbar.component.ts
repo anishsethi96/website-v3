@@ -43,7 +43,7 @@ export class NavbarComponent implements OnInit {
         { page: '/community', title: 'Community Outreach' }
       ]
     }, {
-      page: '/contact',
+      page: '/contact-us',
       title: 'Contact Us',
       isDropdown: false
     }, {
