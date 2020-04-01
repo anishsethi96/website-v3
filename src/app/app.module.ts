@@ -24,6 +24,7 @@ import { JoinComponent } from './pages/join/join.component';
 import { NewMembersTrainingComponent } from './pages/new-members-training/new-members-training.component';
 import { CprCertificationComponent } from './pages/cpr-certification/cpr-certification.component';
 import { ServiceListComponent } from './pages/request-coverage/services-list.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { ServiceListComponent } from './pages/request-coverage/services-list.com
     CarouselComponent,
     FooterComponent,
     PageContentComponent,
-    
+
     HomeComponent,
     RpiaAboutComponent,
     FaqComponent,
@@ -44,6 +45,7 @@ import { ServiceListComponent } from './pages/request-coverage/services-list.com
     JoinComponent,
     NewMembersTrainingComponent,
     CprCertificationComponent,
+    //ContactUsComponent,
     ServiceListComponent
   ],
   imports: [
