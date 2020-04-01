@@ -1,42 +1,80 @@
-<br>
-<h1 style="text-align:center">Request Coverage</h1>
-<br>
-<p style="text-align:center">Planning an event at or around RPI?
-<br>Here are a few options of how RPI Ambulance can provide EMS coverage for your event.
-<br>If you have further questions, please feel free to contact us.</p>
-<br>
-<div *ngFor="let service of services; index as serviceId">
-  <div class="blog-card">
-    <div class="meta">
-      <!-- Background image -->
-      <div class="photo" style="background-image: url(https://www.bluegeo.net/img/portfolio/graphic_amb.jpg)"></div>
-      <!-- Words above image -->
-      <!-- <ul class="details">
-        <li class="author"><a href="#">John Doe</a></li>
-        <li class="date">Aug. 24, 2015</li>
-        <li class="tags">
-          <ul>
-            <li><a href="#">Learn</a></li>
-            <li><a href="#">Code</a></li>
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-          </ul>
-        </li>
-      </ul> -->
-    </div>
-    <!-- Description module -->
-    <div class="description">
-      <h1>{{ service.name }}</h1>
-      <h2>{{ service.price | currency }}/hour*</h2>
-      <p> Activity Description: {{ service.description }} </p>
-      <p>Service: {{ service.service }}</p>
-      <p>EMT: {{ service.emt }} on field crews</p>
-      <p>First Response: {{ service.first_response }}</p>
-      <p>Supplies: {{ service.supplies }}</p>
-      <br>
-      <button (click)='select()'>Select</button>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Request Coverage</h1>
+    <br>
+    <h3>Planning an event at or around RPI?</h3>
+    <h5>Here are a few options of how RPI Ambulance can provide EMS coverage for your event.
+      <br>If you have further questions, please feel free to contact us.</h5>
+  </div>
+
+
+  <div class="pricing-area text-center">
+    <div class="row">
+      <div class="col-md-4 plan price-one">
+        <ul>
+          <li class="heading-one">
+            <h1>Tier I</h1>
+            <span>$10/hour<sup>*</sup></span>
+          </li>
+          <li>Long duration; Low capacity</li>
+          <li>No dedicated patient care facility</li>
+          <li>At least 1 EMT</li>
+          <li>First Response 59</li>
+          <li>Oxygen and medical supplies</li>
+          <li class="plan-action">
+            <button (click)='selectT1()' class="btn btn-primary">Select</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 plan price-two">
+        <ul>
+          <li class="heading-two">
+            <h1>Tier II</h1>
+            <span>$50/hour<sup>*</sup></span>
+          </li>
+          <li>Larger spectator event</li>
+          <li>No dedicated patient care facility</li>
+          <li>1&ndash;3 EMTs on field crews</li>
+          <li>5939 (remains available for 911 calls)</li>
+          <li>Oxygen and medical supplies</li>
+          <li class="plan-action">
+            <button (click)='selectT2()' class="btn btn-primary">Select</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 plan price-three">
+        <ul>
+          <li class="heading-three">
+            <h1>Tier III</h1>
+            <span>$150/hour<sup>*</sup></span>
+          </li>
+          <li>Large spectator events (5,000+)</li>
+          <li>Dedicated patient care facility</li>
+          <li>3&ndash;5 EMTs on field crews</li>
+          <li>5939 (dedicated standby)</li>
+          <li>2+ emergency event supervisors</li>
+          <li class="plan-action">
+            <button (click)='selectT3()' class="btn btn-primary">Select</button>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
+  <p class="text-center text-muted"><sup>*</sup> Most events within the RPI Community will be staffed free of charge.
+  </p>
+</body>
 
-<p style="text-align:center">* Most events within the RPI Community will be staffed free of charge.</p>
+</html>
