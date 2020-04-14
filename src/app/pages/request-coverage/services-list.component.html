@@ -175,14 +175,10 @@
       </div>
       <hr />
       <div class="btn-toolbar pull-right">
-        <button type="reset" ng-click="clearForm()" class="btn btn-warning">Clear Form</button>
-        <button type="submit" ng-click="handleSubmit()" class="btn btn-success">Submit</button>
+        <button type="reset" (click)="clearForm()" class="btn btn-warning">Clear Form</button>
+        <button type="submit" (click)="handleSubmit()" class="btn btn-success">Submit</button>
       </div>
       <div class="clearfix"></div>
     </form>
   </div>
 </div>
-
-<script>
-
-</script>
