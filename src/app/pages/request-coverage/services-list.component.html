@@ -85,63 +85,84 @@
   <div class="modal-content">
     <button class="close" (click)="close()">&times;</button>
     <!-- Modal content -->
-    <form #userPost="ngForm" role="form" (ngSubmit)="onSubmit(userPost.value)" novalidate >
+    <form #userPost="ngForm" role="form" (ngSubmit)="onSubmit(userPost.value)" novalidate>
       <h4 class="text-center">Tell us about yourself...</h4>
       <div class="form-group">
         <label for="org_name">Organization Name</label>
-        <input type="text" class="form-control" name="org_name" placeholder="Who are we doing this for?"
-          ngModel/>
+        <input type="text" class="form-control" name="org_name" placeholder="Who are we doing this for?" ngModel />
       </div>
       <div class="form-group">
         <label for="contact_name">Contact Name</label>
         <input type="text" class="form-control" name="contact_name" placeholder="Who do we get in touch with?"
-          ngModel/>
-      </div>
-      <div class="form-group">
-        <label for="contact_email">Contact Email</label>
-        <input type="email" class="form-control" name="contact_email" placeholder="How do we reach you?"
-          ngModel/>
-      </div>
-      <div class="form-group">
-        <label for="contact_phone">Contact Phone</label>
-        <input type="tel" class="form-control" name="contact_phone" placeholder="(555) 555-5555"
-          ngModel/>
-      </div>
-      <div class="form-group">
-        <label for="secondary_contact_name">Secondary Contact Name</label>
-        <input type="text" class="form-control" name="secondary_contact_name" placeholder="Who do we get in touch with?"
-          ngModel/>
-      </div>
-      <div class="form-group">
-        <label for="secondary_contact_email">Secondary Contact Email</label>
-        <input type="email" class="form-control" name="secondary_contact_mail" placeholder="How do we reach you?"
-          ngModel/>
-      </div>
-      <div class="form-group">
-        <label for="secondary_contact_phone">Secondary Contact Phone</label>
-        <input type="tel" class="form-control" name="secondary_contact_phone" placeholder="(555) 555-5555"
-          ngModel/>
-      </div>
-      <h4 class="text-center">Tell us about the event...</h4>
-      <div class="form-group">
-        <label for="event_name">Event Name</label>
-        <input type="text" class="form-control" name="event_name" placeholder="What are we covering?"
-          ngModel/>
-      </div>
-      <div class="form-group">
-        <label for="event_location">Event Location</label>
-        <input type="text" class="form-control" name="event_location" placeholder="Where do you want us? Building Name or Address"
-          ngModel/>
-      </div>
-      <div class="form-group">
-        <label for="event_date">Date</label>
-        <input type="date" class="form-control" name="event_date" placeholder="MM/DD/YYYY" ngModel/>
+          ngModel />
+
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="contact_email">Contact Email</label>
+              <input type="email" class="form-control" name="contact_email" placeholder="How do we reach you?"
+                ngModel />
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="contact_phone">Contact Phone</label>
+              <input type="tel" class="form-control" name="contact_phone" placeholder="(555) 555-5555" ngModel />
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="form-group">
-        <label for="event_arr_time">Arrival Time</label>
-        <input type="time" class="form-control" name="event_arr_time" placeholder="HH:MM AM/PM -- When do you need us there?"
-          ngModel/>
+        <label for="secondary_contact_name">Secondary Contact Name</label>
+        <input type="text" class="form-control" name="secondary_contact_name" placeholder="Who do we get in touch with?"
+          ngModel />
+
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="secondary_contact_email">Secondary Contact Email</label>
+              <input type="email" class="form-control" name="secondary_contact_mail" placeholder="How do we reach you?"
+                ngModel />
+            </div>
+          </div>
+
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="secondary_contact_phone">Secondary Contact Phone</label>
+              <input type="tel" class="form-control" name="secondary_contact_phone" placeholder="(555) 555-5555"
+                ngModel />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="text-center">Tell us about the event...</h4>
+      <div class="form-group">
+        <label for="event_name">Event Name</label>
+        <input type="text" class="form-control" name="event_name" placeholder="What are we covering?" ngModel />
+      </div>
+      <div class="form-group">
+        <label for="event_location">Event Location</label>
+        <input type="text" class="form-control" name="event_location"
+          placeholder="Where do you want us? Building Name or Address" ngModel />
+      </div>
+
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="event_date">Date</label>
+            <input type="date" class="form-control" name="event_date" placeholder="MM/DD/YYYY" ngModel />
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="event_arr_time">Arrival Time</label>
+            <input type="time" class="form-control" name="event_arr_time"
+              placeholder="HH:MM AM/PM -- When do you need us there?" ngModel />
+          </div>
+        </div>
       </div>
       <div class="form-group">
         <label for="event_type">Event Type</label>
@@ -155,28 +176,40 @@
           <option value="Other Indoor Event">Other Indoor Event</option>
         </select>
       </div>
-      <div class="form-group">
-        <label for="expected_attendance">Expected Attendance</label>
-        <input type="number" min="0" class="form-control" name="expected_attendance" placeholder="0"
-          ngModel/>
+
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="expected_attendance">Expected Attendance</label>
+            <input type="number" min="0" class="form-control" name="expected_attendance" placeholder="0" ngModel />
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="expected_duration">Expected Duration</label>
+            <input type="number" min="0" class="form-control" name="expected_duration" placeholder="Hours" ngModel />
+          </div>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="expected_duration">Expected Duration</label>
-        <input type="number" min="0" class="form-control" name="expected_duration" placeholder="Hours"
-          ngModel/>
-      </div>
+
       <div class="form-group">
         <label for="more_info">More Information</label>
         <input type="text" class="form-control" name="more_info" placeholder="Anything else you want to let us know?"
-          ngModel/>
+          ngModel />
       </div>
       <div class="form-group">
         <div class="g-recaptcha" data-sitekey="6LdHKxUTAAAAAGTBpgYEJZDoAz1uGqG_tX_gQb1K"></div>
       </div>
       <hr />
       <div class="btn-toolbar pull-right">
-        <button type="reset" (click)="clearForm()" class="btn btn-warning">Clear Form</button>
-        <button type="submit" class="btn btn-success">Submit</button>
+        <div class="row">
+          <div class="col-sm">
+            <button type="reset" (click)="clearForm()" class="btn btn-warning">Clear</button>
+          </div>
+          <div class="col-sm">
+            <button type="submit" class="btn btn-success">Submit</button>
+          </div>
+        </div>
       </div>
       <div class="clearfix"></div>
     </form>

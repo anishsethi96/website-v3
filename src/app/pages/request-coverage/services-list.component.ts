@@ -34,16 +34,11 @@ export class ServiceListComponent {
   }
 
   onSubmit(data) {
-    this.http.post("http://localhost:3000/rampart/request_coverage/insert", data)
+    console.log(data);
+    this.http.post("http://localhost:3000/request_coverage/insert", data)
     .subscribe((result)=>{
         console.warn("result", result)
     })
-  }
-
-  handleSubmit() {
-    const form = document.querySelector('form');
-    const data = new FormData(form);
-    // Need the backend information here
   }
 
   clearForm() {
