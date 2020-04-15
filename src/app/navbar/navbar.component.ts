@@ -18,13 +18,10 @@ export class NavbarComponent implements OnInit {
       isDropdown: true,
       dropdownOptions: [
         { page: '/rpia-about', title: 'About RPI Ambulance' },
-        { page: '/faq', title: 'FAQs' },
-        { page: '/officers', title: 'Officers' },
+        { page: '/5939-about', title: 'Ambulance (or better title)' },
+        //{ page: '/fr59-about', title: 'First Response' },
         { isDivider: true },
-        { page: '/5939-about', title: 'Ambulance' },
-        { page: '/fr59-about', title: 'First Response' },
-        { isDivider: true },
-        { page: '/media', title: 'Media' }
+        { page: '/faq', title: 'FAQs' }
       ]
     }, {
       page: '/request-coverage',
