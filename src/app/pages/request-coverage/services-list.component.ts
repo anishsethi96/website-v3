@@ -13,19 +13,24 @@ export class ServiceListComponent {
 
   model = new services();
 
+  service_tier = 0;
+
   selectT1() {
     var modal = document.getElementById("popup");
     modal.style.display = "block";
+    this.service_tier = 1;
   }
 
   selectT2() {
     var modal = document.getElementById("popup");
     modal.style.display = "block";
+    this.service_tier = 2;
   }
 
   selectT3() {
     var modal = document.getElementById("popup");
     modal.style.display = "block";
+    this.service_tier = 3;
   }
 
   close() {
@@ -34,6 +39,8 @@ export class ServiceListComponent {
   }
 
   onSubmit(data) {
+    window.alert("Submit successfully!");
+    data.service_tier = this.service_tier;
     console.log(data);
     this.http.post("http://localhost:3000/request_coverage/insert", data)
     .subscribe((result)=>{
