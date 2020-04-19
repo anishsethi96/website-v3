@@ -13,15 +13,6 @@ interface OBoard {
   template: `<rpia-page-content [content]="content"></rpia-page-content>`
 })
 export class OfficersComponent implements OnInit {
-  private readonly currentOBoard: OBoard = {
-    title: "Current Officer Board (2019-2020)",
-    captain: "Caleb Woodson",
-    firstLt: "Nathaniel Foye",
-    secondLt: "Martin Smith",
-    president: "Yaseen Mahmoud",
-    vicePresident: "Nathan Buckley"
-  };
-
   private readonly pastOBoards: OBoard[] = [
     {
       title: "Officer Board Spring 2019",
@@ -97,47 +88,6 @@ export class OfficersComponent implements OnInit {
         non-elected coordinator positions.`
     },
     {
-      type: 'text',
-      header: 'Current Officer Board',
-      centered: true,
-      body: `
-        <div class="row">
-          <div class="col-md-6 text-center">
-            <p class="small"><strong>Line Side Officers</strong></p>
-            <div class="row">
-              <div class="col-sm-4">
-                <p><strong>${this.currentOBoard.captain}</strong><br>Captain</p>
-              </div>
-              <div class="col-sm-4">
-                <p><strong>${this.currentOBoard.firstLt}</strong><br>First Lieutenant</p>
-              </div>
-              <div class="col-sm-4">
-                <p><strong>${this.currentOBoard.secondLt}</strong><br>Second Lieutenant</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 text-center">
-            <p class="small"><strong>Civil Side Officers</strong></p>
-            <div class="row">
-              <div class="col-sm-4 offset-sm-2">
-                <p><strong>${this.currentOBoard.president}</strong><br>President</p>
-              </div>
-              <div class="col-sm-4">
-                <p><strong>${this.currentOBoard.vicePresident}</strong><br>Vice President</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      `
-    },
-    {
-      internalTitle: 'Officer Board Image',
-      type: 'img',
-      img: 'assets/oboard.jpg',
-      alt: 'The current Officer Board',
-      centered: true
-    },
-    {
       type: 'divider'
     },
     {
@@ -147,7 +97,7 @@ export class OfficersComponent implements OnInit {
       body: `<div class="row">${this.pastOBoards.map(oboard => this.createPastOboardHtml(oboard)).join(' ')}</div>`
     }
   ];
-  
+
   createPastOboardHtml(oboard: OBoard): string {
     return `
         <div class="col-12 col-md-6">

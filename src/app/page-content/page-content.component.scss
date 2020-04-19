@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@600;700&display=swap');
+
 h2 {
   font-size: 36px;
   margin-top: 0;
@@ -5,6 +7,15 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
+}
+
+h4 {
+  font-family: 'Sarabun', sans-serif; font-size: 32px; weight: 700; line-height: 25px; text-justify: inter-word;
+
+}
+
+.font{
+  font-family: 'Sarabun', sans-serif; font-size: 18px; weight: 300; line-height: 25px; text-justify: inter-word;
 }

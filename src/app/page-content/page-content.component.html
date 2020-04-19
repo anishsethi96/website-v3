@@ -4,8 +4,9 @@
       <hr *ngIf="c.type === 'divider'">
       <h2 *ngIf="c.type === 'title' && c.header">{{c.header}}</h2>
       <h3 *ngIf="c.type !== 'title' && c.header">{{c.header}}</h3>
+      <h4 *ngIf="c.type !== 'title' && c.teamheader">{{c.teamheader}}</h4>
       <img *ngIf="c.type === 'img'" [src]="c.img" class="img-fluid mb-4">
-      <div *ngIf="!c.type || c.type === 'text'" class="lead mb-4" [innerHtml]="c.body"></div>
+      <div *ngIf="!c.type || c.type === 'text'" class="font mb-4" [innerHtml]="c.body"></div>
       <div *ngIf="c.type === 'embed'" class="embed-responsive embed-responsive-16by9" [ngStyle]="embedStyles(c)">
         <iframe [src]="safeEmbedUrl(c)" width="100%" [ngStyle]="embedStyles(c)" frameborder="0"></iframe>
       </div>

@@ -19,7 +19,6 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { OfficersComponent } from './pages/officers/officers.component';
 import { AmbulanceAboutComponent } from './pages/ambulance-about/ambulance-about.component';
 import { Fr59AboutComponent } from './pages/fr59-about/fr59-about.component';
-import { MediaComponent } from './pages/media/media.component';
 import { JoinComponent } from './pages/join/join.component';
 import { NewMembersTrainingComponent } from './pages/new-members-training/new-members-training.component';
 import { CprCertificationComponent } from './pages/cpr-certification/cpr-certification.component';
@@ -41,7 +40,6 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
     OfficersComponent,
     AmbulanceAboutComponent,
     Fr59AboutComponent,
-    MediaComponent,
     JoinComponent,
     NewMembersTrainingComponent,
     CprCertificationComponent,

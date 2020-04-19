@@ -6,7 +6,6 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { OfficersComponent } from './pages/officers/officers.component';
 import { AmbulanceAboutComponent } from './pages/ambulance-about/ambulance-about.component';
 import { Fr59AboutComponent } from './pages/fr59-about/fr59-about.component';
-import { MediaComponent } from './pages/media/media.component';
 import { JoinComponent } from './pages/join/join.component';
 import { NewMembersTrainingComponent } from './pages/new-members-training/new-members-training.component';
 import { ServiceListComponent } from './pages/request-coverage/services-list.component';
@@ -19,7 +18,6 @@ const routes: Routes = [
   { path: 'officers', component: OfficersComponent },
   { path: 'ambulance-about', component: AmbulanceAboutComponent },
   { path: 'fr59-about', component: Fr59AboutComponent },
-  { path: 'media', component: MediaComponent },
   { path: 'join', component: JoinComponent },
   { path: 'new-members-training', component: NewMembersTrainingComponent },
   { path: 'request-coverage', component: ServiceListComponent},
