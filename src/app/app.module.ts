@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-
+import { FormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -52,7 +52,8 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,28 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@600;700&display=swap");
 
 h1 {
   font-weight: 600;
-  font-family: 'Sarabun';
+  font-family: "Sarabun", sans-serif;
   color: #000000;
 }
 
-h3{
+h3 {
   font-weight: 200;
-  font-family: 'Sarabun';
-  color: #4e4e4e;;
+  font-family: "Sarabun", sans-serif;
+  color: #4e4e4e;
 }
 
-h5{
+h5 {
   font-weight: 200;
-  font-family: 'Sarabun';
-  color: #4e4e4e;;
+  font-family: "Sarabun", sans-serif;
+  color: #4e4e4e;
 }
 
 .header {
   text-align: center;
   padding: 20px;
-  font-size:20px;
+  font-size: 20px;
 }
 
 .sep {
@@ -30,7 +29,7 @@ h5{
 }
 
 .pricing_heading {
-  margin-top: 120px
+  margin-top: 120px;
 }
 
 .pricing_heading h2,
@@ -60,27 +59,22 @@ h5{
 }
 
 .pricing-area ul {
-  background: #FAFAFA;
+  background: #fafafa;
   padding: 0;
   margin: 0;
+  max-width: 345px;
 }
 
 .pricing-area ul li {
   list-style: none;
   padding: 15px 0;
+  max-width: 345px;
   font-size: 16px;
   font-weight: 400;
 }
 
 .pricing-area ul li:nth-child(even) {
-  background: #f5f5f5
-}
-
-.pricing-area .price-three img,
-.pricing-area .price-six img {
-  position: absolute;
-  right: 15px;
-  top: 0;
+  background: #f5f5f5;
 }
 
 .pricing-area .heading-one,
@@ -92,17 +86,13 @@ h5{
 
 .pricing-area .heading-one,
 .pricing-area .heading-two,
-.pricing-area .heading-three,
-.pricing-area .heading-four,
-.pricing-area .heading-five,
-.pricing-area .heading-six,
-.pricing-area .heading-seven {
+.pricing-area .heading-three {
   margin-left: 0px;
 }
 
 .pricing-area .heading-one,
 .pricing-area .price-one .plan-action .btn-primary {
-  background: #e24f43
+  background: #e24f43;
 }
 
 .pricing-area .heading-two,
@@ -112,81 +102,11 @@ h5{
 
 .pricing-area .heading-three,
 .pricing-area .price-three .plan-action .btn-primary {
-  background: #27AE60;
-}
-
-.pricing-area .heading-four,
-.pricing-area .price-four .plan-action .btn-primary {
-  background: #5c5c5c
-}
-
-.pricing-area .heading-five,
-.pricing-area .price-five .plan-action .btn-primary {
-  background: #5c5c5c
-}
-
-.pricing-area .heading-six,
-.pricing-area .price-six .plan-action .btn-primary {
-  background: #e24f43;
-}
-
-.pricing-area .heading-seven,
-.pricing-area .price-seven .plan-action .btn-primary {
-  background: #5c5c5c
+  background: #27ae60;
 }
 
 .pricing-area .bg {
-  background: #fafafa
-}
-
-.pricing-area .heading-one h3:before {
-  border-color: #bf4539 transparent transparent;
-}
-
-.pricing-area .heading-two h3:before {
-  border-color: #1f8c4d transparent transparent;
-}
-
-.pricing-area .heading-three h3:before {
-  border-color: #d4880f transparent transparent;
-}
-
-.pricing-area .heading-four h3:before {
-  border-color: #424242 transparent transparent;
-}
-
-.pricing-area .heading-five h3:before {
-  border-color: #424242 transparent transparent;
-}
-
-.pricing-area .heading-six h3:before {
-  border-color: #bf4539 transparent transparent;
-}
-
-.pricing-area .heading-seven h3:before {
-  border-color: #424242 transparent transparent;
-}
-
-.pricing-area h3:before {
-  border-color: #D4880F transparent transparent;
-  border-radius: 5px 0 0 0px;
-  border-style: solid;
-  border-width: 12px;
-  content: "";
-  height: 0;
-  left: 4px;
-  position: absolute;
-  top: 78px;
-  width: 0;
-  z-index: -999;
-}
-
-.small-pricing h3:after {
-  height: 94px;
-}
-
-.small-pricing h3:before {
-  top: 74px;
+  background: #fafafa;
 }
 
 .plan-action {
@@ -198,4 +118,43 @@ h5{
   padding: 5px 20px;
   color: #fff;
   margin-top: 5px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  padding-top: 0px; /* Location of the box */
+  left: 300px;
+  top: 0;
+  width: 60%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  // background-color: rgb(0,0,0); /* Fallback color */
+  // background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  align-self: start;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
