@@ -22,11 +22,7 @@ p { color: white; font-family: 'Roboto Slab', sans-serif; font-size: 14px; line-
 }
 
 .rpia-home {
-  background:
-  linear-gradient(
-    rgba(0, 0, 0, 0.6)
-  ),
-  url('../../../assets/bg1.jpg');
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url(../../../assets/bg1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

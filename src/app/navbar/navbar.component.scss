@@ -1,9 +1,5 @@
 .bg-rpia-navbar {
-  background:
-  linear-gradient(
-    rgba(0, 0, 0, 0.6)
-  ),
-  url('../../assets/bg1.jpg');
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url(../../../assets/bg1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
